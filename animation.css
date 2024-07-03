@@ -1,0 +1,27 @@
+@keyframes rotateMoon {
+    0% {
+      visibility: visible;
+      z-index: 2;
+      left: -15%;
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+  
+    50% {
+      left: 115%;
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+    65%{
+      visibility: hidden;
+      z-index: 0;
+    }
+    95%{    
+      visibility: hidden;
+      z-index: 0;
+    }
+    100% {
+      visibility: visible;
+      z-index: 2;
+      left: -15%;
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
