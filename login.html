@@ -3,28 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>News Portal - Login</title>
-  <link rel="stylesheet" href="./style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Авторизация</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/auth.css">
 </head>
 <body>
   <header>
     <div class="logo">News</div>
     <nav>
-        <a href="./index.html">Назад</a>
+      <a href="index.html">Главная</a>
+      <a href="register.html">Регистрация</a>
+      <a href="login.html">Авторизация</a>
     </nav>
-  </header>
-  <main>
-    <div class="login-form">
-      <h2>Login</h2>
-      <form action="#">
-        <input type="text" placeholder="Username">
-        <input type="password" placeholder="Password">
-        <button type="submit">Login</button>
-      </form>
+    <div class="search-bar">
+      <input type="text" placeholder="Поиск по тегам">
+      <select>
+        <option value="">Выберите пользователя</option>
+        <option value="user1">Пользователь 1</option>
+        <option value="user2">Пользователь 2</option>
+      </select>
     </div>
+  </header>
+
+  <main>
+    <a href="index.html" class="back-button">Назад</a>
+
+    <form class="auth-form">
+      <h2>Авторизация</h2>
+      <input type="text" placeholder="Логин" required>
+      <input type="password" placeholder="Пароль" required>
+      <button type="submit">Войти</button>
+    </form>
   </main>
+
   <footer></footer>
 </body>
 </html>
